@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Trello For Rebbizers",
+  "author": "Naing Lu",
+  "version": "1.0",
+  "content_scripts": [ {
+      "js": [ "script.js"],
+      "matches": [ "https://trello.com/*" ]
+   } ],
+   "browser_action":{
+      "default_popup": "popup.html",
+      "default_icon": "image/icon.png"
+    },
+  "permissions":[
+    "storage","activeTab","tabs"
+  ], 
+  "web_accessible_resources": [
+    "image/bg.png",
+    "image/sunset.png",
+    "image/sunShine.png",
+    "image/forest.png",
+    "image/ocean.png",
+    "image/luck.png",
+    "image/crop.png",
+    "image/icon.png"
+  ]
+}
